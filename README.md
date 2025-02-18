@@ -15,7 +15,7 @@ conda activate seismo
 ```
 conda install -c conda-forge obspy
 ```
-* Download the EQ-Chicago repository
+* Download the SeismoExplore-Chicago repository
 ```
 git clone https://github.com/am-thomas/SeismoExplore-Chicago.git
 ```
