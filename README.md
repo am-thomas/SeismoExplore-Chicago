@@ -24,6 +24,3 @@ git clone https://github.com/am-thomas/SeismoExplore-Chicago.git
 cd SeismoExplore-Chicago
 pip install -r requirements.txt
 ```
-
-## Sample code
-This section provides instructions to apply
