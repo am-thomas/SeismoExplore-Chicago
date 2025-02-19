@@ -1,4 +1,4 @@
-# Visualizes 20-s windows (10-s detection with preceding 10-s 'noise' window) of events in a given
+# Visualizes 60-s windows (10-s detection with preceding 40-s 'noise' window) of events in a given
 # event type. 
 #
 # Note that not all windows will share the event type characteristics. Since we detect events from overlapping
@@ -58,10 +58,10 @@ if __name__ == '__main__':
 
 
     df = pd.read_csv(CLUST_DIR/ f'eventtype_{args.eventtype}.csv')
-    duration = 20
+    duration = 60
     for i, time in enumerate(df['start_time']):
         print(i, time)
-        starttime_str = str(UTCDateTime(time) - 10)
+        starttime_str = str(UTCDateTime(time) - 40)
         for chan in ['HHZ', 'HH1', 'HH2']:
             st = utils_process.get_rawdata(args.net, args.sta, args.loc, chan, starttime_str, duration,
                 args.samp_rate, plot_wave=False, save=False)
