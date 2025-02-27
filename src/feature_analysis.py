@@ -1,4 +1,5 @@
-# test
+# Program to plot the correlation coefficient matrix of all desired feature pairs
+# and return pairs with correlations greater than a given threshold
 
 from constants import DATA_PATH
 import argparse

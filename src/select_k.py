@@ -1,4 +1,7 @@
-from constants import DATA_PATH
+# Program to run multiple K-means models with a range of k (number of clusters)
+# Computes the silhouette score, inertia, and distortion for each k value
+
+
 import argparse
 import numpy as np 
 import pandas as pd 
@@ -10,6 +13,7 @@ from scipy.spatial.distance import cdist
 import os 
 import logging
 from datetime import datetime
+from constants import DATA_PATH
 
 if __name__ == '__main__': 
     parser = argparse.ArgumentParser() 
