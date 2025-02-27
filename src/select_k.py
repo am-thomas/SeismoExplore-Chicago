@@ -20,7 +20,7 @@ if __name__ == '__main__':
     parser.add_argument("--clust_dir", default='clustering_test', type=str, help='name of folder to save results to')
     parser.add_argument("-d", "--load_expdirs", required=True,  nargs='+', type=str,help='list of experiment folders (with feature values) to parse through')
     parser.add_argument("--features", nargs='+', default = 'all', 
-                        help='List of feature names to use for clustering. Default is to use all available features')
+                        help='List of feature names to use for clustering. Default is to use all available features in the csv')
     parser.add_argument("--kstart", default=2, type=int, help="Start value of k (no. of clusters)")
     parser.add_argument("--kend", default=20, type=int, help="End value of k (no. of clusters)") 
     args = parser.parse_args()
