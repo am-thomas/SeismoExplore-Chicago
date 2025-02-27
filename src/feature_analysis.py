@@ -22,7 +22,7 @@ if __name__ == '__main__':
     parser.add_argument("--features", nargs='+', default = 'all', 
                         help='List of feature names to use for clustering. Default is to use all available features')
     parser.add_argument("--customlabels", default=False, action=argparse.BooleanOptionalAction, 
-                        help='Use custom labels to create publication figure. Note: you need to input the same 14 features with args.features: vg_Zcomp_ratio avg_H1comp_ratio avg_H2comp_ratio PSDmf_Zcomp PSDmf_H1comp PSDmf_H2comp kur_Zcomp_stw kur_H1comp_stw kur_H2comp_stw skw_Zcomp_stw skw_H1comp_stw skw_H2comp_stw hour day_of_week')
+                        help='Use custom labels to create publication figure. Note: you need to input the same 14 features in the same order as args.features: avg_Zcomp_ratio avg_H1comp_ratio avg_H2comp_ratio PSDmf_Zcomp PSDmf_H1comp PSDmf_H2comp kur_Zcomp_stw kur_H1comp_stw kur_H2comp_stw skw_Zcomp_stw skw_H1comp_stw skw_H2comp_stw hour day_of_week')
     parser.add_argument("--T", default=0.9, type=float, help="Correlation threshold. Features having abs(corr) > T are saved")
     args = parser.parse_args()
 
