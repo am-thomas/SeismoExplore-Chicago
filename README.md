@@ -59,6 +59,6 @@ python create_featcsv.py --exp_name 2017-10-01_7days --days 7 --start_day 2017-1
 python cluster.py --load_expdirs 2017-10-01_7days --load_savedmodel --clust_dir clusters_2017-10-01_7days
 ```
 
-***get_statfeatures.py and its depend programs are adapted from a another study. The program computes statistical features for all overlapping (50%) 10-s windows in continous data. If adapting our workflow to a different environment, we recommend modifying the file to only compute statistical features on detected 10-s windows and avoid unncessarily computation.
+***get_statfeatures.py and its dependies are adapted from our Chicago earthquake detection study. The program computes statistical features for all overlapping (50%) 10-s windows in continous data. If adapting our workflow to a different environment, we recommend modifying the file to only compute statistical features on detected 10-s windows and avoid unncessarily computation.
 
 The above sample code utilizes model features, background PSD windows, and a pre-trained model used in our final study. This repository contains code and capacities to select your own parameters and train your own model. See the header text and command-line arguments for each Python file to learn more. This repository also contains optional files to aid in feature selection (feature_analysis.py), k-selection (select_k.py), and event visualization (viz_eventtype.py). Thank you for visiting this page and learning more about our work. 
