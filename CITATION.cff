@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Thomas"
+  given-names: "Ann Mariam"
+  orcid: "https://orcid.org/0000-0001-6271-1738"
+- family-names: "Ranadive"
+  given-names: "Omkar"
+- family-names: "van der Lee"
+  given-names: "Suzan"
+  orcid: "https://orcid.org/0000-0003-1884-1185"
+title: "SeismoExplore-Chicago"
+version: 1.0.0
+doi: 10.5281/zenodo.15047293
+date-released: 2025-03-18
+url: "https://zenodo.org/records/15047293"
