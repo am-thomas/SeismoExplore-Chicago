@@ -1,4 +1,6 @@
 # SeismoExplore-Chicago
+[![DOI](https://zenodo.org/badge/934328936.svg)](https://doi.org/10.5281/zenodo.15047292)
+
 Detect and cluster anomalous seismic events in a noisy urban environment (Greater Chicago area). Applies a PSD-misfit detector and K-means clustering for event detection and clustering, respectively.
 
 ## Installation 
